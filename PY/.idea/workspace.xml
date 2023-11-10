@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07edb1ce-810f-4d88-a40f-b76bf5c969bd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Machine-Learning/Supervised Machine Learning Regression and Classification/week1/4.Regression Model/C1_W1_Lab03_Model_Representation_Soln.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Machine-Learning/Supervised Machine Learning Regression and Classification/week1/4.Regression Model/C1_W1_Lab03_Model_Representation_Soln.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Machine-Learning/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Machine-Learning/requirements.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Machine-Learning" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2MXiIzkDG3cHWJbW1YDEzrbTgKO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/download/2013921_周延霖(3).ipynb&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeProjct\PY\Machine-Learning-Course\lab1-KNN" />
+      <recent name="D:\CodeProjct\PY\Machine-Learning-Course\lab1-KNN\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="PY" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07edb1ce-810f-4d88-a40f-b76bf5c969bd" name="Changes" comment="" />
+      <created>1677920252933</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677920252933</updated>
+      <workItem from="1677920265730" duration="192000" />
+      <workItem from="1677920466720" duration="4325000" />
+      <workItem from="1678334348717" duration="2000" />
+      <workItem from="1678454307299" duration="5008000" />
+      <workItem from="1681653990855" duration="1000" />
+      <workItem from="1682587245936" duration="100000" />
+      <workItem from="1683162002409" duration="2000" />
+      <workItem from="1690795781742" duration="92000" />
+      <workItem from="1690795933537" duration="458000" />
+      <workItem from="1692006354975" duration="2751000" />
+      <workItem from="1693488447098" duration="170000" />
+      <workItem from="1693705938952" duration="2001000" />
+      <workItem from="1694138936696" duration="1478000" />
+      <workItem from="1694766793174" duration="3372000" />
+      <workItem from="1694831003845" duration="7000" />
+      <workItem from="1694834951199" duration="1752000" />
+      <workItem from="1694911015397" duration="4052000" />
+      <workItem from="1694915291792" duration="823000" />
+      <workItem from="1695036248654" duration="679000" />
+      <workItem from="1695040757828" duration="1350000" />
+      <workItem from="1695080654726" duration="2562000" />
+      <workItem from="1695776864828" duration="63000" />
+      <workItem from="1695779518027" duration="77000" />
+      <workItem from="1695780020656" duration="1290000" />
+      <workItem from="1695781748828" duration="845000" />
+      <workItem from="1695782633797" duration="2631000" />
+      <workItem from="1695785471127" duration="469000" />
+      <workItem from="1695827223971" duration="903000" />
+      <workItem from="1695828284383" duration="1195000" />
+      <workItem from="1695860116034" duration="1254000" />
+      <workItem from="1695871298637" duration="95000" />
+      <workItem from="1695897357774" duration="1328000" />
+      <workItem from="1695900186147" duration="20000" />
+      <workItem from="1695961703448" duration="1487000" />
+      <workItem from="1695973642035" duration="2600000" />
+      <workItem from="1696753247059" duration="2488000" />
+      <workItem from="1696895682497" duration="172000" />
+      <workItem from="1696989903142" duration="1931000" />
+      <workItem from="1696993118323" duration="982000" />
+      <workItem from="1697013010334" duration="651000" />
+      <workItem from="1697699151882" duration="18228000" />
+      <workItem from="1697899015200" duration="6530000" />
+      <workItem from="1697941487819" duration="3561000" />
+      <workItem from="1698576226006" duration="1417000" />
+      <workItem from="1698624202260" duration="1298000" />
+      <workItem from="1698665068560" duration="20402000" />
+      <workItem from="1698748107654" duration="17521000" />
+      <workItem from="1698794521011" duration="863000" />
+      <workItem from="1698796804147" duration="5849000" />
+      <workItem from="1698804585475" duration="20631000" />
+      <workItem from="1698841226592" duration="4302000" />
+      <workItem from="1698888950511" duration="3855000" />
+      <workItem from="1698936438882" duration="101000" />
+      <workItem from="1698937198167" duration="5971000" />
+      <workItem from="1698970021086" duration="3560000" />
+      <workItem from="1699001756390" duration="1263000" />
+      <workItem from="1699231813122" duration="2600000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Machine-Learning-Course/lab3/test.py</url>
+          <line>208</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Machine-Learning-Course/lab3/temp.py</url>
+          <line>170</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Machine-Learning-Course/lab3/temp.py</url>
+          <line>156</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="nearest_indices" />
+        <watch expression="p" />
+        <watch expression="Z0" />
+        <watch expression="gaussian" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PY$ReferenceDocument.coverage" NAME="ReferenceDocument 覆盖结果" MODIFIED="1694139644248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab1-KNN" />
+    <SUITE FILE_PATH="coverage/PY$temp.coverage" NAME="temp 覆盖结果" MODIFIED="1698972483527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab3" />
+    <SUITE FILE_PATH="coverage/PY$project.coverage" NAME="project 覆盖结果" MODIFIED="1678459560223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AITask1" />
+    <SUITE FILE_PATH="coverage/PY$lab1.coverage" NAME="lab1 覆盖结果" MODIFIED="1695082865475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab1-KNN" />
+    <SUITE FILE_PATH="coverage/PY$Doctests__core__.coverage" NAME="Doctests (core 内) 覆盖结果" MODIFIED="1678458850946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Lib/site-packages/unification" />
+    <SUITE FILE_PATH="coverage/PY$code.coverage" NAME="code 覆盖结果" MODIFIED="1692013857152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dict_frequency_aistudio" />
+    <SUITE FILE_PATH="coverage/PY$test.coverage" NAME="test 覆盖结果" MODIFIED="1698971191819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab3" />
+  </component>
+</project>

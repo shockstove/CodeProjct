@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: localhost:3306/calculator?serverTimezone=GMT%2b8
+    username: root
+    password: gusczj0703
+

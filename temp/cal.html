@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            min-height: 100vh;
+            background: #ecf0f3;
+        }
+        .container
+        {
+            width: 45%;
+            height: 45vh;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 12px 12px 20px #cbced1,
+            -12px -12px 20px #ffffff;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .display #screen
+        {
+            width:97%;
+            height: 70px;
+            font-size: 35px;
+            outline:none;
+            border:none;
+            text-align: right;
+            padding-right: .5em;
+            background: #ecf0f3;
+            border-radius:6px;
+            box-shadow: inset 8px 8px 8px #cbced1,
+            inset -8px -8px 8px #ffffff;
+        }
+        .btns
+        {
+            width:100%;
+            margin-top: 1.7em;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .btns .row button
+        {
+            width: 80px;
+            height: 30px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            margin:5px;
+            border-radius:4px;
+            box-shadow: 5px 5px 8px #00000020,
+            -5px -5px 8px #ffffff;
+        }
+        .btns .row button:hover
+        {
+            box-shadow: inset 5px 5px 8px rgba(16,16,16,.1),
+            inset -5px -5px 8px   #ffffff;
+
+
+        }
+        #eval
+        {
+            background: #33ccff;
+            color:#fff;
+            box-shadow:inset 5px 5px 8px #66d9ff,
+            inset -5px -5px 8px #00ace6;
+        }
+        #eval:hover
+        {
+
+            box-shadow:inset 5px 5px 8px #00ace6,
+            inset -5px -5px 8px #00ace6;
+        }
+
+        #ac
+        {
+            background: #33cc33;
+            color:#fff;
+
+        }
+        #ac:hover
+        {
+
+            box-shadow:inset 5px 5px 8px #2eb82b,
+            inset -5px -5px 8px #33cc33;
+        }
+
+        #ce
+        {
+            background: #ff3399;
+            color:#fff;
+        }
+        #ce:hover
+        {
+
+            box-shadow:inset 5px 5px 8px #e60073,
+            inset -5px -5px 8px #ff3399;
+        }
+        #calculator {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+</head>
+<script src="./math.js"></script>
+<body>
+<div class="container">
+    <div class="display">
+        <input id="screen" type="text" placeholder="0">
+    </div>
+
+    <div class="btns">
+        <div class="row">
+            <button id="ce" onclick="backspc()">CE</button>
+            <button onclick="fact()">X!</button>
+            <button class="btn">(</button>
+            <button class="btn">)</button>
+            <button class="btn">%</button>
+            <button id="ac" onclick="screen.value=''">AC</button>
+        </div>
+
+        <div class="row">
+            <button onclick="sin()">sin</button>
+            <button onclick="pi()">π</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn" >÷</button>
+        </div>
+
+        <div class="row">
+            <button onclick="cos()">cos</button>
+            <button onclick="log()">log</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn" >x</button>
+        </div>
+
+        <div class="row">
+            <button onclick="tan()">tan</button>
+            <button onclick="sqrt()">√</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn" >-</button>
+        </div>
+
+        <div class="row">
+            <button onclick="e()">e</button>
+            <button onclick="pow()">x^y</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button id="eval" onclick="cal()">=</button>
+            <button class="btn" >+</button>
+        </div>
+    </div>
+    <script>
+        function cal()
+        {
+            var formula=screen.value;
+            screen.value=eval(screen.value);
+            var result=screen.value;
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', `http://localhost:8080/save?formula=${formula}&result=${result}`, true);
+            xhr.onload = function () {
+                if (xhr.status >= 200 && xhr.status < 300) {
+
+                } else {
+                    console.error('Request failed with status', xhr.status);
+
+                }
+            };
+            xhr.onerror = function () {
+                console.error('Request failed due to a network error');
+            };
+
+            xhr.setRequestHeader('Content-Type', 'text/plain');
+            xhr.send();
+        }
+        var screen=document.querySelector('#screen');
+        var btn=document.querySelectorAll('.btn');
+
+        for (item of btn) {
+            item.addEventListener('click', (e) => {
+                btnext = e.target.innerText;
+
+                if (btnext == 'x') {
+                    btnext = '*';
+                }
+                if (btnext == '÷') {
+                    btnext = '/';
+                }
+                screen.value += btnext;
+                // screen.value += btnext;
+            })
+        }
+        function sin()
+        {
+            screen.value=Math.sin(screen.value);
+        }
+        function cos()
+        {
+            screen.value=Math.cos(screen.value);
+        }
+        function tan()
+        {
+            screen.value=Math.tan(screen.value);
+        }
+        function pow()
+        {
+            screen.value=Math.pow(screen.value,2);
+        }
+        function sqrt()
+        {
+            screen.value=Math.sqrt(screen.value,2);
+        }
+        function log()
+        {
+            screen.value=Math.log(screen.value);
+        }
+        function pi()
+        {
+            screen.value=3.14159265359;
+        }
+        function e()
+        {
+            screen.value=2.71828182846;
+        }
+        function fact()
+        {
+            var i,num,f;
+            f=1;
+            num=screen.value;
+            for(i=1;i<=num;i++)
+            {
+                f=f*i;
+            }
+            i=i-1;
+            screen.value=f;
+        }
+        function backspc()
+        {
+            screen.value=screen.value.substr(0,screen.value.length-1)
+        }
+    </script>
+</div>
+<div class="container">
+    <h2>历史记录      <button id="load" onclick="getHistory()">获取历史记录</button></h2>
+    <table id="history">
+        <thead>
+        <tr>
+            <th>计算式</th>
+            <th>结果</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+<script>
+    function getHistory() {
+        fetch('http://localhost:8080/history')
+            .then(response => response.json())
+            .then(data => {
+                // 将数据传递给构建表格的函数
+                buildTable(data);
+            });
+    }
+    function buildTable(data) {
+        let table = document.getElementById('history');
+        // 创建表格行并添加到表格中
+        data.forEach(function(rowData) {
+            let row = table.insertRow();
+            Object.values(rowData).forEach(function(value) {
+                let cell = row.insertCell();
+                cell.innerHTML = value;
+            });
+        });
+    }
+
+</script>
+<div class="container">
+    <div id="calculator">
+        <h3>利率计算器</h3>
+        <label for="principal">本金:</label>
+        <input type="number" id="principal" placeholder="请输入本金（元）" required>
+        <br><br>
+        <label for="caltype">时间:</label>
+        <input id="caltype" type="number" placeholder="请输入时间(年)" required>
+        <br><br>
+        <button id="interestcal" onclick="interfun()">存款利息</button>
+        <button id="loancal" onclick="loanfun()">贷款利息</button>
+        <br><br>
+        <p id="result"></p>
+    </div>
+</div>
+<script>
+   function interfun(){
+        // 获取输入
+       var year=parseFloat(document.getElementById("caltype").value);
+       var xhr = new XMLHttpRequest();
+       var principal=parseFloat(document.getElementById("principal").value);
+       xhr.open('GET', `http://localhost:8080/interest?time=${year}`, true);
+       xhr.onload = function () {
+           if (xhr.status >= 200 && xhr.status < 300) {
+               var rate = xhr.responseText;
+               const interest=rate*principal*year/100;
+               document.getElementById("result").innerHTML=interest.toFixed(2);
+           } else {
+               console.error('Request failed with status', xhr.status);
+
+           }
+       };
+       xhr.onerror = function () {
+           console.error('Request failed due to a network error');
+       };
+
+       xhr.setRequestHeader('Content-Type', 'text/plain');
+       xhr.send();
+   }
+   function loanfun(){
+       // 获取输入
+       var year=parseFloat(document.getElementById("caltype").value);
+       var xhr = new XMLHttpRequest();
+       var principal=parseFloat(document.getElementById("principal").value);
+       xhr.open('GET', `http://localhost:8080/loan?time=${year}`, true);
+       xhr.onload = function () {
+           if (xhr.status >= 200 && xhr.status < 300) {
+               var rate = xhr.responseText;
+               const loan=rate*principal*year/100;
+               document.getElementById("result").innerHTML=loan.toFixed(2);
+           } else {
+               console.error('Request failed with status', xhr.status);
+
+           }
+       };
+       xhr.onerror = function () {
+           console.error('Request failed due to a network error');
+       };
+
+       xhr.setRequestHeader('Content-Type', 'text/plain');
+       xhr.send();
+   }
+</script>
+
+</body>
+</html>
