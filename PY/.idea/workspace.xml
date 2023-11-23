@@ -23,7 +23,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Machine-Learning" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -45,7 +45,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.notebooks.jupyter.connections.configuration.JupyterServerConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -144,6 +144,12 @@
       <workItem from="1698970021086" duration="3560000" />
       <workItem from="1699001756390" duration="1263000" />
       <workItem from="1699231813122" duration="2600000" />
+      <workItem from="1699604741394" duration="724000" />
+      <workItem from="1699888494138" duration="723000" />
+      <workItem from="1700096767419" duration="16532000" />
+      <workItem from="1700147468400" duration="2816000" />
+      <workItem from="1700208026849" duration="4274000" />
+      <workItem from="1700212419589" duration="102000" />
     </task>
     <servers />
   </component>
@@ -168,6 +174,16 @@
           <line>156</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Machine-Learning-Course/lab4/test.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook://D:/CodeProjct/PY/Machine-Learning-Course/lab4/朴素贝叶斯.ipynb</url>
+          <line>62</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -181,11 +197,11 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PY$ReferenceDocument.coverage" NAME="ReferenceDocument 覆盖结果" MODIFIED="1694139644248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab1-KNN" />
-    <SUITE FILE_PATH="coverage/PY$temp.coverage" NAME="temp 覆盖结果" MODIFIED="1698972483527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab3" />
+    <SUITE FILE_PATH="coverage/PY$temp.coverage" NAME="temp 覆盖结果" MODIFIED="1700108043896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab4" />
     <SUITE FILE_PATH="coverage/PY$project.coverage" NAME="project 覆盖结果" MODIFIED="1678459560223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/AITask1" />
     <SUITE FILE_PATH="coverage/PY$lab1.coverage" NAME="lab1 覆盖结果" MODIFIED="1695082865475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab1-KNN" />
     <SUITE FILE_PATH="coverage/PY$Doctests__core__.coverage" NAME="Doctests (core 内) 覆盖结果" MODIFIED="1678458850946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Lib/site-packages/unification" />
     <SUITE FILE_PATH="coverage/PY$code.coverage" NAME="code 覆盖结果" MODIFIED="1692013857152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dict_frequency_aistudio" />
-    <SUITE FILE_PATH="coverage/PY$test.coverage" NAME="test 覆盖结果" MODIFIED="1698971191819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab3" />
+    <SUITE FILE_PATH="coverage/PY$test.coverage" NAME="test 覆盖结果" MODIFIED="1700211107130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab4" />
   </component>
 </project>

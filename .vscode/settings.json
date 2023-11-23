@@ -3,6 +3,8 @@
         "ctime": "cpp",
         "ostream": "cpp",
         "xstring": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "xiosbase": "cpp",
+        "random": "cpp"
     }
 }

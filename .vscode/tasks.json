@@ -10,7 +10,7 @@
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-lwsock32"
+                "-lwsock32",
             ],
             "options": {
                 "cwd": "${fileDirname}"
