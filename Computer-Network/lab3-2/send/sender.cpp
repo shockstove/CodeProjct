@@ -129,7 +129,7 @@ public:
 UDP_packet sendList[10000];
 
 //打印发送端窗口情况
-void printWindowInfo(){
+void printWindowInfo(bool fin=0){
     cout<<"Win="<<WindowSize<<" Base="<<base<<" NextSeqNum="<<nextSeqNum<<endl;
     return;
 }
@@ -263,10 +263,6 @@ DWORD WINAPI sendHandle(LPVOID lparam){
             //检查是否超时，超时则重发
             end = clock();
             if((double)(end - start) / CLOCKS_PER_SEC >= 1){
-                // if(resendTime>6){
-                //     cout<<"重发次数过多";
-                //     return 0;
-                // }
                 resendTime++;
                 cout<<"[Info]尝试重传......"<<endl;
                 nextSeqNum = p+1;
@@ -288,7 +284,7 @@ DWORD WINAPI receiveHandle(LPVOID lparam){
         recvfrom(client,(char*)&receive,sizeof(receive),0,(SOCKADDR*)&targetAd,&len);
         if(receive.checkChecksum()&&receive.flags&FLAG_USE&&receive.flags&FLAG_ACK){
             if(receive.Ack>=base){
-                //收到确认ACK，窗口左移
+                //收到确认ACK，窗口右移
                 base = receive.Ack;
                 cout<<"[Recv] ";
                 receive.printInfo();

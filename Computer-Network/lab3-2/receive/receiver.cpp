@@ -286,8 +286,7 @@ void recvFile(SOCKET client,UDP_packet& pk,SOCKADDR_IN s,SOCKADDR_IN t){
                 exceptedSeqNum++;
                 send.setAck(receive.Seq);
                 send.calChecksum();
-                sendto(client,(char*)&send,sizeof(send),0,(SOCKADDR*)&t,sizeof(SOCKADDR));
-                //cout<<receive.Seq<<"receive and send"<<endl;
+                sendto(client,(char*)&send,sizeof(send),0,(SOCKADDR*)&t,sizeof(SOCKADDR))
                 cout<<"[Recv] ";
                 receive.printInfo(); 
                 cout<<"[Info] ";
