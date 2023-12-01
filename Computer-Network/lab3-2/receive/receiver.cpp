@@ -343,6 +343,7 @@ int main()
 {
     WSADATA wd;
     SOCKET server;
+    //设置socket缓冲区大小
     unsigned int rcv_size = 131072;
     socklen_t optlen = sizeof(rcv_size);
     setsockopt(server , SOL_SOCKET , SO_RCVBUF ,(char*)&rcv_size , optlen);
@@ -359,9 +360,6 @@ int main()
         cout<<"sock初始化失败!"<<endl;
         return 0;
     }
-    // timeout.tv_sec=2;
-    // timeout.tv_usec=0;
-    // setsockopt(server,SOL_SOCKET,SO_RCVTIMEO,(const char*)&timeout,sizeof(timeout));
     sourceAd.sin_addr.s_addr=inet_addr(HOST);
     targetAd.sin_addr.s_addr=inet_addr(HOST);
     sourceAd.sin_family=targetAd.sin_family=AF_INET;

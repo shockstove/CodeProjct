@@ -39,7 +39,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/download/2013921_周延霖(3).ipynb&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/download/2013750_管昀玫(5).ipynb&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,6 +51,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\CodeProjct\PY\Machine-Learning-Course\lab5" />
       <recent name="D:\CodeProjct\PY\Machine-Learning-Course\lab1-KNN" />
       <recent name="D:\CodeProjct\PY\Machine-Learning-Course\lab1-KNN\data" />
     </key>
@@ -151,6 +152,10 @@
       <workItem from="1700208026849" duration="4274000" />
       <workItem from="1700212419589" duration="102000" />
       <workItem from="1700820674593" duration="49000" />
+      <workItem from="1701312899517" duration="16700000" />
+      <workItem from="1701361226698" duration="139000" />
+      <workItem from="1701361400256" duration="696000" />
+      <workItem from="1701388814824" duration="5971000" />
     </task>
     <servers />
   </component>
@@ -180,10 +185,20 @@
           <line>98</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Machine-Learning-Course/lab5/test.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook://D:/CodeProjct/PY/Machine-Learning-Course/lab4/朴素贝叶斯.ipynb</url>
           <line>62</line>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook://D:/download/2013750_管昀玫(5).ipynb</url>
+          <line>162</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -203,6 +218,6 @@
     <SUITE FILE_PATH="coverage/PY$lab1.coverage" NAME="lab1 覆盖结果" MODIFIED="1695082865475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab1-KNN" />
     <SUITE FILE_PATH="coverage/PY$Doctests__core__.coverage" NAME="Doctests (core 内) 覆盖结果" MODIFIED="1678458850946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/Lib/site-packages/unification" />
     <SUITE FILE_PATH="coverage/PY$code.coverage" NAME="code 覆盖结果" MODIFIED="1692013857152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dict_frequency_aistudio" />
-    <SUITE FILE_PATH="coverage/PY$test.coverage" NAME="test 覆盖结果" MODIFIED="1700211107130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab4" />
+    <SUITE FILE_PATH="coverage/PY$test.coverage" NAME="test 覆盖结果" MODIFIED="1701396404584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Machine-Learning-Course/lab5" />
   </component>
 </project>
