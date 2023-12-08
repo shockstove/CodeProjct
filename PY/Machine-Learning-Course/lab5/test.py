@@ -30,7 +30,7 @@ def modify_distance(matrix,type):
     elif type == 2:
         return np.max(matrix,axis=0)
     else :
-        return np.mean(matrix,axis=0)
+        return np.average(matrix,axis=0)
 
 
 def cal_clustering(type, k):
@@ -38,18 +38,16 @@ def cal_clustering(type, k):
     for i in range(data.shape[0]):
         node = [i]
         clusters.append(node)
-    dis_matrix = []
-    for i in range(len(clusters)):
-        dists = []
-        node1 = data[i]
-        for j in range(len(clusters)):
-            node2 = data[j]
+    dis_matrix = np.zeros((data.shape[0],data.shape[0]))
+    for i in range(data.shape[0]):
+        # dists = []
+        for j in range(i,data.shape[0]):
             if i == j:
                 dist = 65536
             else:
-                dist = cal_distance(node1, node2, type)
-            dists.append(dist)
-        dis_matrix.append(dists)
+                dist = np.sqrt(np.sum(np.square(data[i] - data[j])))
+            dis_matrix[i][j] = dist
+            dis_matrix[j][i] = dist
     dis_matrix = np.array(dis_matrix)
     while len(clusters) != k:
         min_cluster1 = int(np.argmin(dis_matrix)/dis_matrix.shape[0])
@@ -65,6 +63,7 @@ def cal_clustering(type, k):
         dis_matrix = np.delete(dis_matrix, min_cluster2, axis = 1)
         if min_cluster1 > min_cluster2:
             min_cluster1 = min_cluster1-1
+        dis_matrix[min_cluster1,min_cluster1] = 65536
         # for i in range(len(clusters)):
         #     dis_matrix[min_cluster1, i] = cal_distance(data[clusters[min_cluster1]], data[clusters[i]],type)
         #     dis_matrix[i, min_cluster1] = dis_matrix[min_cluster1,i]
@@ -79,8 +78,8 @@ def cal_clustering(type, k):
             temp[clusters[i]] = case[i]
         results.append(temp)
         correct_number = 0
-        for i in range(temp.shape[0]):
-            if results[i] == labels[i]:
+        for j in range(temp.shape[0]):
+            if temp[j] == labels[j]:
                 correct_number += 1
         correct_rate = correct_number / temp.shape[0]
         correct_rates.append(correct_rate)
@@ -89,9 +88,25 @@ def cal_clustering(type, k):
     return correct,result
 
 
+def plot_draw(data, label,type):
+    fig = plt.figure()
+    t = fig.add_subplot(1,1,1,projection='3d')
+    colors = 'rgby'
+    for i in range(len(data)):
+        t.scatter(data[i][0],data[i][1],data[i][2],color=colors[int(label[i])], s=np.pi)
+    plt.title(type)
+    plt.show()
+
+
+
+
 correct_single, labels_single = cal_clustering(1, 4)
 correct_complete, labels_complete = cal_clustering(2, 4)
 correct_average, labels_average = cal_clustering(3, 4)
 print("single_linkage层次聚类算法正确率为",correct_single)
+plot_draw(data,labels_single,'single_linkage')
 print("complete_linkage层次聚类算法正确率为",correct_complete)
+plot_draw(data,labels_complete,'complete_linkage')
 print("average_linkage层次聚类算法正确率为",correct_average)
+plot_draw(data,labels_average,'average_linkage')
+
